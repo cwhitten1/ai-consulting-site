@@ -1,0 +1,186 @@
+/* Design Tokens */
+:root {
+    --color-navy: #1a2b4a;
+    --color-white: #ffffff;
+    --color-accent: #2d6bcf;
+    --color-accent-hover: #1e4fa0;
+    --color-light: #f8f9fa;
+    --color-text: #2c3e50;
+    --color-muted: #6b7c93;
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --max-width: 1100px;
+}
+
+/* Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Hero */
+.hero {
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    padding: 8rem 0 6rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+}
+
+.hero-sub {
+    font-size: 1.35rem;
+    line-height: 1.5;
+    max-width: 650px;
+    margin: 0 auto 1rem;
+    opacity: 0.9;
+}
+
+.hero-detail {
+    font-size: 1.05rem;
+    opacity: 0.7;
+    margin-bottom: 2.5rem;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    border-radius: 4px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--color-accent-hover);
+}
+
+/* Services */
+.services {
+    padding: 6rem 0;
+    background-color: var(--color-light);
+}
+
+.services h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--color-navy);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.service-card {
+    background: var(--color-white);
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 2.5rem 2rem;
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-navy);
+    margin-bottom: 0.5rem;
+}
+
+.service-duration {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+}
+
+.service-card p:last-child {
+    color: var(--color-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--color-navy);
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-navy);
+    color: var(--color-muted);
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        padding: 5rem 0 4rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-sub {
+        font-size: 1.15rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .services {
+        padding: 4rem 0;
+    }
+
+    .cta-section {
+        padding: 3.5rem 0;
+    }
+
+    .cta-section h2 {
+        font-size: 1.4rem;
+    }
+}
