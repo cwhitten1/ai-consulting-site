@@ -35,9 +35,12 @@ When a client says something like the signal below, recommend the corresponding 
 | "We don't know which customers are about to leave" | Customer Intelligence | Churn Risk Prediction | Standard Pilot |
 | "We get hundreds of reviews/tickets but can't see trends" | Customer Intelligence | Customer Sentiment Analysis | Standard Pilot |
 | "We treat all customers the same regardless of value" | Customer Intelligence | Customer Segmentation | Standard Pilot |
+| "We have 10,000 support tickets but no idea what the top themes are" | Customer Intelligence | Voice of Customer Synthesis | Standard Pilot |
+| "Our reps work leads in the order they come in, not by quality" | Customer Intelligence | Sales Intelligence & Lead Scoring | Standard Pilot |
 | "Our devs spend too much time on boilerplate code" | Code/Engineering | AI Coding Copilot Adoption | Quick Win |
 | "We have no tests and can't refactor safely" | Code/Engineering | Automated Test Generation | Quick Win |
 | "Code reviews are a bottleneck — PRs sit for days" | Code/Engineering | Code Review Augmentation | Quick Win |
+| "Our documentation is 2 years out of date and nobody updates it" | Code/Engineering | Technical Documentation Generation | Quick Win |
 | "Nobody knows how the legacy system works anymore" | Code/Engineering | Legacy Code Comprehension | Standard Pilot |
 
 ---
@@ -161,6 +164,8 @@ Accelerate software development through AI coding assistants, automated testing,
 ---
 
 ## How to Use This Reference
+
+> **🎯 Start Here for New Clients:** Begin with Quick Win patterns. They deliver visible results in 1–2 weeks, build trust, and create momentum for larger engagements. A successful Quick Win is the best sales tool for a Standard Pilot.
 
 **During/after a discovery call:**
 
